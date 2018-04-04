@@ -1,14 +1,15 @@
 def reverse_each_word(string)
-  array_reversed_words = []
-  array_words = string.split(" ")
-  array_words.each {|word| array_reversed_words << word.reverse}
-  string_reversed_words = array_reversed_words.join(" ")
+  reversed_words_array = []
+  words_array = string.split(" ")
+  words_array.each {|word| reversed_words_array << word.reverse}
+  string_reversed_words = reversed_words_array.join(" ")
 end
 
 
+
 def reverse_each_word(string)
-  array_reversed_words = []
-  array_words = string.split(" ")
-  array_words.collect {|word| array_reversed_words << word.reverse}
-  string_reversed_words = array_reversed_words.join(" ")
+  reversed_words_array = []
+  words_array = string.split(" ")
+  words_array.collect {|word| reversed_words_array << word.reverse}
+  string_reversed_words = reversed_words_array.join(" ")
 end
